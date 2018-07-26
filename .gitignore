@@ -260,3 +260,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Hetoshi Charity/App_Code/DataSet.xss
+/Hetoshi Charity/Web.config
+/Hetoshi Charity/Web.Debug.config
