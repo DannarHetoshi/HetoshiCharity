@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Home.aspx" title="Home"  description="Home">
+
+    <siteMapNode url="~/MyStory.aspx" title="MyStory" description="My Story" />
+      
+    <siteMapNode url="~/YouTube.aspx" title="YouTube"  description="YouTube" />
+    
+    <siteMapNode url="~/TwitchTV.aspx" title="TwitchTV"  description="Twitch" />
+
+    <siteMapNode url="~/ExtraLifeFunderaiser.aspx" title="ExtraLife" description="Extra Life Fundraiser" />
+
+    <siteMapNode url="~/MembersOnly/OnlyRegisteredCanSeeThis.aspx" title="Logged In Users Only" description="Logged In Users Only" />
+
+      <siteMapNode url="~/Recruiters.aspx" title="Hiring Managers and Recruiters" description="For Hiring Managers and Recruiters!"/>
+  </siteMapNode>
+</siteMap>

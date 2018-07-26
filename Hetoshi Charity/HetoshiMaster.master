@@ -1,0 +1,249 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HetoshiMaster.master.cs" Inherits="MasterPage"%>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <form runat="server">
+        <head runat="server">
+            <asp:scriptmanager runat="server"></asp:scriptmanager>
+        
+            <script async="" src="//www.google-analytics.com/analytics.js"></script>
+            <title>Hetoshi's Charity Page | Raising money for the kids.</title>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="Dannar Hetoshi's Extra-Life Charity homepage.  
+                Find his Youtube, Twitch TV, and Twitter Content here.  #ForTheKids." />
+            <meta name="keywords" content="Dannar,DannarHetoshi,ExtraLife,Extra-Life,YouTube,TwitchTV,Twitter,Gaming,Charity" />
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" media="screen" href="/CSS/HetoshiCharity.css" type="text/css">
+            <link rel="stylesheet" media="screen" href="/CSS/dd-public-min.css" type="text/css">
+            <link rel="stylesheet" media="screen" href="/CSS/boilerplate-master-min.css" type="text/css">
+            <link rel="stylesheet" media="screen" href="/CSS/extralife-master-min.css" type="text/css">
+            <link rel="stylesheet" media="print" href="/CSS/extralife-master-print-min.css" type="text/css">
+            <link rel="stylesheet" media="screen" href="/CSS/extralife-fundraising-min.css" type="text/css">
+            
+            <%--<div class="dd-widget dd-loginbar navbar navbar-fixed-top navbar-inverse">
+                <div class="navbar-inner">--%>
+				    <%--<div class="mobile-nav-container">--%>
+                        <!-- begin login JS code -->
+
+                        <div class="topnav">
+                            <div class="hamNavDropdown">
+                                <a href="javascript:void(0);" class="dropbtn icon" onclick="hamFunction()"><i class="fa fa-bars"></i></a>
+                                <div id="hamNav" class="hamNav-content">
+                                    <asp:LinkButton runat="server" id="LoginBtn" Text="Log In" OnClientClick="javascript:document.getElementById('jsLogin').style.display='inline-grid'; return false;"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" id="LogOut" Text="Log Out" OnClick="LogOut_Click" ></asp:LinkButton>
+                                    <asp:LinkButton runat="server" id="createAccountBtn" Text="New User?" PostBackUrl="~/CreateAccount.aspx"></asp:LinkButton>
+                                </div>
+                            </div>    
+                        </div>
+                        <script>
+                            function hamFunction() {
+                                document.getElementById("hamNav").classList.toggle("show");
+                            }
+                            window.onclick = function (event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementById("hamNav-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                        </script>
+
+                        <div id="jsLogin" class="modal-content animate">
+                            <div id="jsLoginForm2" runat="server">
+                                <div class="imgContainer" style="text-align: center; padding-left: 5%; margin: auto;">
+                                    <span onclick="document.getElementById('jsLogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="/image files/TKHomeIcon.png" alt="Kench Icon" class="avatar" />
+                                </div>
+                                <div id="containerLogin" style="text-align:center; margin:auto;" runat="server">
+                                    <asp:label style="color:black" for="uNameLogin" runat="server"><b>Username:</b></asp:label>
+                                    <asp:TextBox runat="server" type="text" id="uNameLogin" text="" placeholder="Enter Username" ClientIDMode="Static"></asp:TextBox><br />
+                                    <asp:RequiredFieldValidator ControlToValidate="uNameLogin" ErrorMessage="Username Required!" Display="Dynamic" EnableClientScript="False" runat="server"></asp:RequiredFieldValidator>
+
+                                    <asp:label style="color:black" for="uPasswordLogin"><b>Password:</b></asp:label>
+                                    <asp:TextBox runat="server" type="password" text="" placeholder="Enter Password" id="uPasswordLogin" ClientIDMode="Static"></asp:TextBox><br />
+                                    <asp:RequiredFieldValidator ControlToValidate="uPasswordLogin" ErrorMessage="Password Required!" Display="Dynamic" EnableClientScript="False" runat="server"></asp:RequiredFieldValidator>
+
+                                    <asp:Button id="jsLoginBtn" type="submit" OnClick="JsLoginBtn_Click" OnClientClick="javascript:return validation();" runat="server" text="Login Now" CausesValidation="false" ></asp:Button>
+                                        <script>
+                                            function validation() {
+                                                var username = document.getElementById('uNameLogin').value;
+                                                var password = document.getElementById('uPasswordLogin').value;
+                                                if (username == null || password == null || username == "" || password == "") {
+                                                    document.getElementById('uNameLogin').value = "User Name Required!";
+                                                    return false;
+                                                }
+                                            }
+                                        </script>
+
+                                    <asp:CheckBox id="chkPersistCookie" runat="server" checked="true" text="Remember Me"></asp:CheckBox>
+                                    <asp:Button id="cancelLoginBtn" runat="server" type="button" OnClientClick="document.getElementById('jsLogin').style.display='none'" class="cancelBtn" text="Cancel"></asp:Button>
+                                    <span class="password" style="float:right"><a href="#/PasswordReset.aspx">Forgot Password?</a></span><br />
+                                    <span class="register" style="float:right"><a href="/CreateAccount.aspx">New User Registration</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div id="jsNewVisitor" class="modal-content animate" runat="server">
+                            <div id ="jsNewVisitor2">
+                                <div class="imgContainer" style="text-align: center; padding-left: 5%; margin: auto;" >
+                                    <span onclick="document.getElementById('jsNewVisitor').style.display='none'" class="close" title="Close Modal" runat="server">&times;</span>
+                                    <img src="image files/ExtraLifeIcon.PNG" alt="Extra Life Image" class="avatar" />
+                                </div>
+                                <div id="containerNewVisitor" style="text-align:center; margin:auto;">
+                                    <asp:label style="color:black" runat="server">
+                                        <b>Welcome new visitor!  This is my personal project charity fundraising website!<p />
+                                            If you are here as a prospective recruiter click <a href="/Recruiters.aspx">here!</a><br />
+                                            People wanting to help Gillette's Childrens' Hospital of St. Paul Minnesota can just close this window!</b></asp:label><br />
+                                </div>
+                            </div>
+                        </div>   
+                    <%--</div>--%>
+                <%--</div>
+            </div>--%>
+        </head>
+
+        <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+        <body class="theme-extralife palette-default circuit-donordrive action-participant language-en event-539 event-type-p participant-297699 participant-type-p team-type-extra team-38593 participant-legacy-year-4" 
+            data-page-context="{&quot;language&quot;:&quot;en&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;participantID&quot;:297699,&quot;action&quot;:&quot;participant&quot;,&quot;environment&quot;:&quot;LIVE&quot;,&quot;theme&quot;:&quot;extralife&quot;,&quot;title&quot;:&quot;Extra Life&quot;,&quot;eventID&quot;:539,&quot;teamID&quot;:38593,&quot;circuit&quot;:&quot;donordrive&quot;}" 
+            kpmisdocumentcomplete="666" kpmsourceindexset="666">
+
+            <div id="top-header" class="green-gradient">
+	            <div class="wrap">
+	                <div id="mobile-header">
+			            <div id="m-nav">
+    	                </div>
+	                </div>
+	                <ul class="topnavcms">
+                        <li class="nav-home"><a href="/Home.aspx"><img alt="Home" src="/image files/TKHomeIcon.png" width="40" height="40" /></a></li>
+					    <li class="nav-youtube"><a href="https://www.youtube.com/DannarHetoshi"><img alt="YouTube" src="/image files/Youtube Icon.png" width="40" height="40" /></a></li>
+					    <li class="nav-twitch"><a href="https://www.Twitch.Tv/DannarHetoshi"><img alt="Twitch TV" src="/image files/Twitch TV.png" width="50" height="50" /></a></li>
+                        <li class="nav-twitter"><a href="https://www.twitter.com/DannarHetoshi"><img alt="Twitter" src="/image files/Twitter Icon.png" width="40" height="40" /></a></li>
+                        <li class="nav-extralife"><a href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=297699">
+                            <img alt="Charity Page" src="/image files/ExtraLifeIcon.png" height="100" width="100" /></a></li>
+				    </ul>
+                </div>           
+            </div>
+            <div id="hetoshi-charity-content">
+                <div id="avatar-wrap" class="wrap">
+                    <div class="participant-card">
+	                    <div class="avatar participant-legacy-avatar-year-4">
+		                    <div class="dd-editable-content dd-editable-avatar">
+			                    <img class="profile-img" src="//assets.donordrive.com/extralife/images/$avatars$/constituent_CFBFC040-C29F-F29A-69C9634C24B12F19.jpg">
+		                    </div>
+	                    </div>
+	                    <div class="participant-info participant-info-year-4">
+		                    <div id="participant-name">
+			                    <p class="page-details"><h1>Dannar Hetoshi</h1>
+			                    <span class="details-item"><a id="teamLink" class="link-team" href="www.extra-life.org/index.cfm?fuseaction=donordrive.team&amp;teamID=38593">
+                                    <i class="icon-group"></i>Team Savannah</a></span>
+    		                    </p>
+                                <div id="avatar-actions" class="light-grey">
+	                                <div class="wrap row-fluid">
+		                                <div id="thermo-wrap" class="span6">
+                                            <a href="https://www.extra-life.org/index.cfm?fuseaction=donate.participant&amp;participantID=297699" title="DONATE" 
+                                                id="btn-support-participant-top" class="dd-btn btn-big btn-support-card" style="float: left;"><span>Support my Charity!</span></a>
+                                            <a href="https://www.extra-life.org/index.cfm?fuseaction=register.start&eventID=539&teamID=38593" title="JOIN" 
+                                                id="btn-support-team-top" class="dd-btn btn-big btn-support-card" style="float: left;"><span>Join Our Team!</span></a>
+		                                </div>
+	                                </div>
+                                </div>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wrap-Welcome">
+                <div id="Objective-Story-Wrap">
+                    <div class="dd-editable-content dd-editable-fundraising-message">
+                        <p class="fundraisingMessage"></p>
+                        <h1><asp:Label id="welcomeMessage" text="Welcome to my Home Page!" runat="server"/></h1>
+                        <h3><a name="anchor"><asp:Label id="whoAMI" text="My name is Dannar Hetoshi!  I'm playing games to help sick Kids!" runat="server" /></a></h3>
+                        <div class="wrap">
+                            <div id="centerColTabs">
+                                <ul id="participantTabs" class="nav nav-tabs nav-tabs-large">
+	                                <li class="active"><a href="/Home.aspx">Home</a></li>
+                                    <li><a href="/MembersOnly/MyStory.aspx">My Story!</a></li>
+	                                <li><a href="/MembersOnly/YouTube.aspx">YouTube</a></li>
+                                    <li><a href="/MembersOnly/TwitchTV.aspx">TwitchTV</a></li>
+                                    <li><a href="/MembersOnly/CurrentGames.aspx">Current Games!</a></li>
+                                    <li><a href="https://www.extra-life.org/index.cfm?fuseaction=register.start&eventID=539&teamID=38593">Join Our Team!</a></li>
+                                </ul>
+                            </div>
+                            <div id="wrap">
+                                <div id="centerCol">
+                                    <div id="participantTabsContent">
+                                        <div class="dd-editable-content dd-editable-fundraising-message">
+                                            <h5 class="green"><img alt="I'm Playing Games to Heal Local Kids" src="https://assets.donordrive.com/extralife/images/$cms$/100/1796.jpg" style="width: 717px; height: 215px;"></h5> 
+                                            <h6>On November 3rd, I'll be playing games for 24 hours to raise funds for sick kids at my local children's hospital!<br> &nbsp;</h6> 
+                                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+		                                <div class="clearfix"></div>
+	                                </div>
+		                            <div class="clr"></div>
+	                            </div>
+                                <div id="leftCol">
+		                            <div class="box hospital-widget">
+			                            <div class="box" id="hospitallogobox">
+		    	                            <h1>Playing in support of</h1>
+				                            <a href="https://gillettechildrens.childrensmiraclenetworkhospitals.org" target="_blank"><img src="../image files/Gillette's Hospital.PNG"></a>
+			                            </div>
+			                            <p>
+			                                Donations stay local to fund critical treatments, healthcare services,
+				                            pediatric medical equipment and charitable care.
+			                            </p>
+		                            </div>
+                    <!-- Participant Ad Gif -->
+		                            <div id="socialBtns" class="box">
+		                                <h1>Get The Word Out</h1>
+			                            <div class="padding">
+			                                <button class="js-facebook-share dd-btn dd-social-btn dd-social-btn--facebook" type="button" title="Share on Facebook" sourceindex="11" data-href="http://www.dannarhetoshi/home.aspx" data-mobile-iframe="true">
+                                                <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.dannarhetoshi.com%2Fhome.aspx%amp;src=sdkpreparse"><i class="icon icon-facebook"></i>Share</a></button><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.dannarhetoshi.com%2Fhome.aspx%amp;src=sdkpreparse">
+
+				                            </a><button class="js-tweet dd-btn dd-social-btn dd-social-btn--twitter" type="button" title="Share on Twitter" sourceindex="12" data-href="http://34.211.59.232/home.aspx" data-mobile-iframe="true"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.dannarhetoshi.com%2Fhome.aspx%amp;src=sdkpreparse">
+                                                </a><a target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw"><i class="icon icon-twitter"></i>Tweet</a></button><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><a target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw">
+
+    			                            <button class="dd-btn dd-social-btn dd-social-btn--page-link js-pagelink-fancybox" data-fancybox-href="#pagelinkmodal" sourceindex="14"><i class="icon icon-link"></i>Get page link</button>
+    			                            <div id="pagelinkmodal" style="display: none;">
+	    			                            <div class="modal-body">
+					                                <p class="text-center" style="margin-top: 100px; font-size: 15px;"><span class="share-page-url">https://www.extra-life.org/participant/297699</span></p>
+					                                <p class="text-center"><button class="dd-btn dd-btn__copy-link" sourceindex="15">Copy link to clipboard</button></p>
+				                                </div>
+			                                </div>
+		                                    <div class="clr">&nbsp;</div></a>
+
+			                            </div><a target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw"></a>
+		                            </div><a target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div id="footer" class="navy-gradient">
+                        <a id="back-to-top"><i class="icon-angle-up"></i></a>
+        		        <div id="mobile-logos">
+			                <a id="footer-logo" href="https://www.extra-life.org/"><img src="themes/extralife/img/white-logo.svg" onerror="this.onerror=null; this.src='themes/extralife/img/fallback/white-logo.png'"></a>
+			                <a id="footer-cmn" href="http://childrensmiraclenetworkhospitals.org/" target="_blank"><img src="themes/extralife/img/white-cmn.svg" onerror="this.onerror=null; this.src='themes/extralife/img/fallback/white-cmn.png'"></a>
+			                <a id="footer-twitch" href="http://twitch.tv" target="_blank"><img src="themes/extralife/img/white-twitch.svg" onerror="this.onerror=null; this.src='themes/extralife/img/fallback/white-twitch.png'"></a>
+		                </div>
+	                </div>
+                </div>
+            </div>
+        </body>
+    </form>
+</html>

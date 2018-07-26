@@ -1,0 +1,264 @@
+﻿/* Printable CSS Stuff =====*/
+.clearfix {
+    *zoom: 1;
+}
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+html {
+    width: 100%;
+}
+
+body {
+    background: #FFF;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5em;
+    font-family: lucida grande, lucida, arial, helvetica, sans-serif;
+    width: 95%;
+}
+
+img {
+    border: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #4074c2;
+}
+
+.clr {
+    clear: both;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+}
+
+#header,
+#leftCol,
+#rightCol,
+#leftNav,
+#welcome,
+#sponsors,
+#ddpower,
+.navbar,
+.topnavcms {
+    display: none;
+}
+
+#footertxt {
+    text-align: center;
+    font-size: 9px;
+    padding-top: 15px;
+    border-top: 1px #666 solid;
+}
+
+    #footertxt a {
+        display: none;
+    }
+/* Data Table =====*/
+.table.table-bordered {
+    width: 100%;
+    border-top: 1px #BBB solid;
+    border-left: 1px #BBB solid;
+}
+
+    .table.table-bordered caption {
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 0 5px 0;
+        line-height: 1.5em;
+    }
+
+    .table.table-bordered th {
+        text-align: left;
+        font-size: 10px;
+        color: #333;
+        font-weight: bold;
+        padding: 2px 9px 2px 9px;
+        border-right: 1px #BBB solid;
+        border-bottom: 1px #BBB solid;
+    }
+
+        .table.table-bordered th a {
+            color: #333;
+            cursor: pointer;
+            cursor: hand;
+            text-decoration: underline;
+        }
+
+        .table.table-bordered th.thLast {
+            border-top: 1px #BBB solid;
+            border-bottom: none;
+        }
+
+    .table.table-bordered td {
+        font-size: 12px;
+        color: #333;
+        padding: 2px 9px 2px 9px;
+        border-right: 1px #BBB solid;
+        border-bottom: 1px #BBB solid;
+    }
+/* Form Elements =====*/
+form {
+    display: inline;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: #333333;
+    padding: 0;
+    margin: 4px 0;
+    clear: both;
+}
+
+fieldset {
+    position: relative;
+    display: block;
+    /*border: 1px #CCC solid;*/
+    border-top: 1px #666 solid;
+    border-right: none;
+    border-bottom: 1px #666 solid;
+    border-left: none;
+    padding-top: 8px;
+    margin: 15px 0 15px 0;
+}
+
+    fieldset legend {
+        font-weight: bold;
+        padding: 0 5px;
+        color: #000;
+    }
+
+#register {
+    font-size: 16px;
+}
+
+.formTitleRequired {
+    float: left;
+    width: 145px;
+    color: #333;
+    text-align: right;
+    padding: 0 5px 10px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+    .formTitleRequired em {
+        font-size: 20px !important;
+        color: red;
+        font-style: normal;
+    }
+
+.formTitle {
+    float: left;
+    width: 145px;
+    color: #333;
+    text-align: right;
+    padding: 0 5px 10px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+label strong {
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 5px 0;
+}
+
+    label strong em {
+        color: #F00;
+        font-size: 20px;
+        font-style: normal !important;
+    }
+
+strong.lbl {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 5px 0;
+}
+/* fieldset label {
+	border: none;
+	padding: 0;
+	margin: 4px 0;
+	clear: left;
+}
+*/
+.details {
+    display: block;
+    float: left;
+    width: 145px;
+    color: #666;
+    text-align: right;
+    padding: 0 5px 10px 0;
+    margin: 0;
+    border: none;
+}
+
+label .details em {
+    color: #F00;
+    font-size: 20px;
+    font-style: normal !important;
+}
+
+br.cleardetails {
+    clear: left;
+}
+
+label.error {
+    border: 1px #F00 solid;
+    padding: 5px;
+    background-color: #F9E6E6;
+}
+
+    label.error:hover {
+        border: 1px #F00 solid;
+        padding: 5px;
+        background-color: #F9E6E6;
+    }
+
+fieldset label.error {
+    border: 1px #F00 solid;
+    padding: 5px 0 5px 0;
+    background-color: #F9E6E6;
+}
+
+    fieldset label.error:hover {
+        border: 1px #F00 solid;
+        padding: 5px 0 5px 0;
+        background-color: #F9E6E6;
+    }
+
+.dataTable tr.rowLighterror:hover td span.errorMsg {
+    display: block;
+}
+
+.dataTable tr.rowDarkerror:hover td span.errorMsg {
+    display: block;
+}
+
+.dataTable tr.rowLighterror:hover td span.errorMsg {
+    display: block;
+    top: -10px;
+}
+
+.dataTable tr.rowDarkerror:hover td span.errorMsg {
+    display: block;
+    top: -10px;
+}

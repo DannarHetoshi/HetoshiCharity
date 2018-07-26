@@ -1,0 +1,867 @@
+﻿.clearfix {
+    *zoom: 1;
+}
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+body {
+    line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+blockquote p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+    *zoom: 1;
+}
+
+    #wrap:before,
+    #wrap:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    #wrap:after {
+        clear: both;
+    }
+
+#header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+}
+
+#action-btns {
+    margin: 20px 0;
+}
+
+#banner img {
+    display: block;
+}
+
+#centerCol,
+#centerColinterior {
+    left: 25%;
+    position: relative;
+    float: left;
+}
+
+#centerCol {
+    width: 50%;
+    padding: 20px 5px;
+}
+
+#centerColinterior {
+    width: 68.75%;
+    padding: 20px 5px;
+}
+
+    #centerColinterior.full-width,
+    #centerColinterior + #leftCol:empty {
+        position: relative;
+        width: 960px;
+        padding: 0;
+        float: left;
+        left: auto !important;
+        *zoom: 1;
+    }
+
+        #centerColinterior.full-width:before,
+        #centerColinterior + #leftCol:empty:before,
+        #centerColinterior.full-width:after,
+        #centerColinterior + #leftCol:empty:after {
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+
+        #centerColinterior.full-width:after,
+        #centerColinterior + #leftCol:empty:after {
+            clear: both;
+        }
+
+.action-thanks div#centerColinterior {
+    margin-left: 0;
+}
+
+#rightCol {
+    width: 22.91666667%;
+    float: right;
+    position: relative;
+    padding: 20px 0 0 0;
+}
+
+#leftCol {
+    width: 22.91666667%;
+    right: 50%;
+    position: relative;
+    float: left;
+    padding: 20px 0 0 0;
+}
+
+    #leftCol:empty {
+        display: none;
+    }
+
+#centerColinterior + #leftCol {
+    right: 68.75%;
+}
+
+#sponsors {
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 778px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+    #sponsors img,
+    .sponsorbox img {
+        vertical-align: middle;
+        margin: 0 15px 15px 15px;
+    }
+
+img.sponsor {
+    padding: 0 0 10px 0;
+}
+
+#sponsorLogos div {
+    text-align: left;
+}
+
+.box,
+.eventBox {
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border: none;
+}
+
+.navBox {
+    margin: 0 0 20px 0;
+}
+
+    .navBox .padding {
+        padding: 0;
+    }
+
+#centralLoginDiv h1,
+#teamTotal h1,
+.eventBox h1,
+.box h1 {
+    color: #555;
+    font-family: Helvetica Neue, helvetica, arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 0 6px 0;
+    margin: 0 0 14px 0;
+    line-height: 20px;
+}
+
+.box label strong {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 3px;
+}
+
+.box input {
+    font-family: Helvetica Neue, helvetica, arial, sans-serif;
+    margin-bottom: 6px;
+}
+
+.box p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.box ol {
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+    .box ol li {
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+
+.eventBox .eventdividerline {
+    padding: 10px 0 5px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.eventBox ul {
+    display: block;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+    .eventBox ul li {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 4px;
+        line-height: 15px;
+    }
+
+        .eventBox ul li a {
+            display: block;
+            padding: 3px 0 3px 0;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+            .eventBox ul li a:hover {
+                text-decoration: underline;
+            }
+
+.thermoBox {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#event-info {
+    padding: 3px 0 15px 0;
+}
+
+    #event-info p {
+        padding: 0 15px 10px 15px;
+    }
+
+.topnavcms {
+    list-style: none;
+    position: relative;
+    *zoom: 1;
+}
+
+    .topnavcms:before,
+    .topnavcms:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    .topnavcms:after {
+        clear: both;
+    }
+
+    .topnavcms > li {
+        display: inline-block;
+        
+    }
+
+        .topnavcms > li > a {
+            display: block;
+        }
+
+@media (min-width: 960px) {
+    .topnavcms > li > ul {
+        clear: both;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 0;
+        z-index: 60000;
+        left: -999em;
+        position: absolute;
+        list-style: none;
+    }
+
+        .topnavcms > li > ul > li > a {
+            display: block;
+            text-align: left;
+            text-decoration: none;
+        }
+
+    .topnavcms > li:hover > ul {
+        left: auto;
+    }
+}
+
+#leftNav {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+    #leftNav li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+    }
+
+        #leftNav li a {
+            display: block;
+        }
+
+    #leftNav ul {
+        margin: 0;
+        padding: 0;
+        list-style-image: none;
+    }
+
+        #leftNav ul li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            list-style-image: none;
+        }
+
+            #leftNav ul li a {
+                display: block;
+            }
+
+            #leftNav ul li li a {
+                display: block;
+            }
+
+.dataTable {
+    border-left: 0;
+}
+
+    .dataTable th,
+    .dataTable td {
+        box-sizing: content-box;
+    }
+
+#footer {
+    margin: 0 auto;
+}
+
+#footer-text {
+    float: left;
+}
+
+#powered-by {
+    display: block;
+    width: 160px;
+    height: 51px;
+    float: right;
+}
+
+#menu-collapse {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    #menu-collapse {
+        display: block;
+    }
+
+    div#centerColinterior {
+        width: auto !important;
+        float: none !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        max-width: 100%;
+    }
+
+    #btn-support-card {
+        display: inline-block !important;
+    }
+
+    #centerCol .participant-card .avatar i[class*="icon-"]:before,
+    #centerCol .team-card .avatar i[class*="icon-"]:before {
+        color: #444;
+    }
+}
+
+@media (max-width: 769px) {
+    #errorBar,
+    #warningBar,
+    #confirmBar {
+        height: auto;
+        line-height: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+
+        #errorBar [class^="icon-"],
+        #warningBar [class^="icon-"],
+        #confirmBar [class^="icon-"] {
+            display: none;
+            margin-right: 0;
+        }
+
+        #errorBar .btn-form,
+        #warningBar .btn-form,
+        #confirmBar .btn-form {
+            display: block;
+            width: 100%;
+            margin-bottom: 8px;
+            left: 0;
+        }
+
+        #errorBar .dd-notification-ok,
+        #warningBar .dd-notification-ok,
+        #confirmBar .dd-notification-ok {
+            margin-top: 20px;
+        }
+
+    .help,
+    #embedbtn {
+        display: none !important;
+    }
+
+    #sponsorLogos div {
+        text-align: left;
+    }
+
+    .nav-tabs a {
+        font-size: 15px !important;
+        padding-right: 14px;
+        padding-left: 14px;
+        line-height: 18px;
+    }
+
+    #centerCol .pagination ul,
+    #centerColinterior .pagination ul {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    .pagination ul > li > span,
+    .pagination ul > li > a {
+        padding: 0 10px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .icon-stack-large {
+        font-size: 3em;
+    }
+
+    .circuit-register #centerColinterior,
+    .circuit-donate #centerColinterior,
+    .circuit-ticket #centerColinterior,
+    .circuit-registerpc #centerColinterior {
+        margin-left: 0;
+        min-width: auto;
+    }
+
+    iframe.staticThermo,
+    #flashthermo {
+        margin: 0;
+    }
+
+    #inappropriatecontentlink,
+    .offlinedonationlink {
+        text-align: left;
+    }
+
+    .donatetorow .pull-left,
+    .donatetorow .pull-right {
+        float: none;
+    }
+
+    .donatetorow .btn,
+    .donatetorow .dd-btn {
+        display: block;
+        margin-top: 15px;
+    }
+
+    #showhideeventdetails {
+        text-align: left;
+    }
+
+        #showhideeventdetails label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #showhideeventdetails .details {
+            display: block;
+            text-align: left;
+        }
+
+    #profile-card {
+        width: auto !important;
+    }
+
+        #profile-card td {
+            padding-bottom: 15px;
+        }
+
+        #profile-card #img-avatar-image {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+    div.dataTables_filter {
+        width: auto;
+        float: none;
+    }
+
+        div.dataTables_filter label,
+        div.dataTables_filter input {
+            float: none;
+            width: 100% !important;
+            font-size: 15px;
+            color: #222;
+        }
+
+        div.dataTables_filter label {
+            margin: 10px 0;
+            display: block;
+        }
+
+        div.dataTables_filter input {
+            padding: 12px;
+            width: auto;
+            margin-top: 10px !important;
+        }
+
+    #ticketTable {
+        overflow: hidden;
+    }
+
+    #captcha,
+    #captcha td {
+        display: table-cell !important;
+    }
+
+    #fundraising-stats h1 {
+        margin: 0;
+    }
+
+    #fundraising-stats h2 {
+        margin-bottom: 0;
+    }
+
+    #fundraising-stats ul {
+        clear: both;
+        white-space: normal;
+        font-size: 11px;
+    }
+
+    #fundraising-stats li {
+        border-right: none;
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 568px) {
+    #wrap {
+        overflow: hidden;
+    }
+
+    table {
+        width: 100% !important;
+    }
+
+    .nav-tabs {
+        border-bottom: 0;
+    }
+
+        .nav-tabs > li {
+            float: left;
+            padding: 2px;
+            border: 1px solid #0087fd;
+            border-style: groove;
+        }
+
+            .nav-tabs > li > a {
+                margin-right: 0;
+            }
+
+            .nav-tabs > li > a,
+            .nav-tabs > .active > a {
+                border: 1px solid #ddd;
+                border-radius: 0;
+            }
+
+            .nav-tabs > li:first-child > a {
+                border-radius: 4px 4px 0 0;
+            }
+
+            .nav-tabs > li:last-child > a {
+                border-radius: 0 0 4px 4px;
+            }
+
+            .nav-tabs > li > a:hover,
+            .nav-tabs > .active > a:hover {
+                border-color: #ddd;
+                z-index: 2;
+            }
+
+            .nav-tabs-large > li > a {
+                padding: 4px !important;
+            }
+
+    #event-bits span {
+        display: block;
+    }
+
+    #event-bits .location i {
+        position: relative;
+        left: 2px;
+    }
+
+    #recurring-prompt {
+        vertical-align: top;
+    }
+
+    #recurring-message {
+        display: block;
+        margin-bottom: 10px;
+        top: 0 !important;
+    }
+
+    .recurringamountlabel {
+        display: inline-block;
+        padding-left: 14px;
+    }
+
+    #monthspan {
+        top: 0 !important;
+    }
+
+        #monthspan input {
+            margin-left: 0 !important;
+        }
+
+    .state-select strong {
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+
+    .state-select select {
+        margin-top: -3px;
+    }
+
+    #singledayevent,
+    #multidayevent {
+        display: block;
+        padding: 10px 0 0 20px;
+    }
+
+    #processform #span-avatar-image {
+        float: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+        #processform #span-avatar-image .btn-form {
+            margin-bottom: 8px;
+        }
+
+    #processform #profile-stats #span-avatar-image,
+    #processform #profile-info {
+        margin-right: 0;
+    }
+
+    .fundraiser-message {
+        line-height: 20px;
+    }
+
+    #beenherelogin .loading {
+        float: none;
+    }
+
+    #a-promocodeadd {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .paymenttype {
+        width: 22%;
+    }
+
+    .message-sent .btn-form,
+    .message-draft .btn-form {
+        white-space: normal;
+        display: block;
+    }
+}
+
+@media (max-width: 960px) {
+    #action-btns {
+        position: static !important;
+    }
+
+    #wrap,
+    #header,
+    #leftNav,
+    #footer,
+    #footer-text {
+        width: auto !important;
+    }
+
+    #header {
+        background-size: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .box .btn,
+    .eventBox .btn,
+    .box .dd-btn,
+    .eventBox .dd-btn {
+        display: block;
+    }
+
+    a.btn.btn-big,
+    a.dd-btn.btn-big {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    span.errorMsg {
+        display: block;
+    }
+
+    #action-btns {
+        width: 100%;
+        position: static;
+    }
+
+        #action-btns a {
+            width: 100%;
+            display: block;
+            margin: 0 0 4px 0;
+        }
+
+    #inlineparticipantname {
+        width: 100% !important;
+    }
+
+    .thermoBox object,
+    .thermoBox div#thermo {
+        margin: 0px auto !important;
+    }
+
+    #centerCol,
+    #centerColinterior,
+    #leftCol,
+    #rightCol,
+    #footer {
+        float: none !important;
+        width: auto !important;
+        left: auto !important;
+        padding: 15px !important;
+        *zoom: 1;
+    }
+
+        #centerCol:before,
+        #centerColinterior:before,
+        #leftCol:before,
+        #rightCol:before,
+        #footer:before,
+        #centerCol:after,
+        #centerColinterior:after,
+        #leftCol:after,
+        #rightCol:after,
+        #footer:after {
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+
+        #centerCol:after,
+        #centerColinterior:after,
+        #leftCol:after,
+        #rightCol:after,
+        #footer:after {
+            clear: both;
+        }
+
+    #leftCol,
+    #rightCol {
+        right: auto !important;
+    }
+
+        #leftCol #socialBtns,
+        #leftCol #participantSearch,
+        #leftCol #centralLoginDiv,
+        #leftCol #forgotPasswordDiv {
+            display: none;
+        }
+
+    #footer #footer-text {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #footer #powered-by {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 960px) {
+    #centerCol .participant-card .avatar i[class*="icon-"]:before,
+    #centerCol .team-card .avatar i[class*="icon-"]:before {
+        color: #444 !important;
+    }
+}
+
+@media (min-width: 960px) {
+    .topnavcms {
+        height: 40px;
+        overflow: visible;
+        display: block;
+    }
+
+    #m-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 333px){
+    body {
+        min-width: 333px;
+    }
+}
+    
+
+.heading2donordriveevent {
+    display: none;
+}
+
+.fancybox-wrap {
+    box-sizing: content-box;
+    width: 350px;
+}
+
+    .fancybox-wrap .fancybox-inner {
+        width: 350px;
+    }
