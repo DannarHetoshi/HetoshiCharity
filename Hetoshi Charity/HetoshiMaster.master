@@ -128,12 +128,12 @@
     	                </div>
 	                </div>
 	                <ul class="topnavcms">
-                        <li class="nav-home"><a href="/Home.aspx"><img alt="Home" src="/image files/TKHomeIcon.png" width="40" height="40" /></a></li>
-					    <li class="nav-youtube"><a href="https://www.youtube.com/DannarHetoshi"><img alt="YouTube" src="/image files/Youtube Icon.png" width="40" height="40" /></a></li>
-					    <li class="nav-twitch"><a href="https://www.Twitch.Tv/DannarHetoshi"><img alt="Twitch TV" src="/image files/Twitch TV.png" width="50" height="50" /></a></li>
-                        <li class="nav-twitter"><a href="https://www.twitter.com/DannarHetoshi"><img alt="Twitter" src="/image files/Twitter Icon.png" width="40" height="40" /></a></li>
+                        <li class="nav-home"><a href="/Home.aspx"><img alt="Home" src="/image files/TKHomeIcon.png" width="50" height="40" /></a></li>
+					    <li class="nav-youtube"><a href="https://www.youtube.com/DannarHetoshi"><img alt="YouTube" src="/image files/Youtube Icon.png" width="50" height="40" /></a></li>
+					    <li class="nav-twitch"><a href="https://www.Twitch.Tv/DannarHetoshi"><img alt="Twitch TV" src="/image files/Twitch TV.png" width="60" height="50" /></a></li>
+                        <li class="nav-twitter"><a href="https://www.twitter.com/DannarHetoshi"><img alt="Twitter" src="/image files/Twitter Icon.png" width="50" height="40" /></a></li>
                         <li class="nav-extralife"><a href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=297699">
-                            <img alt="Charity Page" src="/image files/ExtraLifeIcon.png" height="100" width="100" /></a></li>
+                            <img alt="Charity Page" src="/image files/ExtraLifeIcon.png" height="130" width="100" /></a></li>
 				    </ul>
                 </div>           
             </div>
@@ -148,7 +148,7 @@
 	                    <div class="participant-info participant-info-year-4">
 		                    <div id="participant-name">
 			                    <p class="page-details"><h1>Dannar Hetoshi</h1>
-			                    <span class="details-item"><a id="teamLink" class="link-team" href="www.extra-life.org/index.cfm?fuseaction=donordrive.team&amp;teamID=38593">
+			                    <span class="details-item"><a id="teamLink" class="link-team" href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.team&amp;teamID=38593">
                                     <i class="icon-group"></i>Team Savannah</a></span>
     		                    </p>
                                 <div id="avatar-actions" class="light-grey">

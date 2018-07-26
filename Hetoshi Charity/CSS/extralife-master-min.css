@@ -117,7 +117,7 @@ img {
 }
 
 a:link {
-    color: #fff;
+    color: #50c240;
     text-decoration: none;
     transition: all 0.5s ease;
 }
@@ -300,7 +300,6 @@ a.dd-btn.btn-big {
 
 #wrap {
     background-color: #fff;
-    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -309,14 +308,18 @@ a.dd-btn.btn-big {
 
 #wrap-Welcome {
     background-color: #fff;
-    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     *zoom: 1;
 }
 
-
+#Objective-Story-Wrap {
+    width: auto;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 20px;
+}
 
     #wrap:before,
     #wrap:after {
@@ -330,7 +333,6 @@ a.dd-btn.btn-big {
     }
 
 .wrap {
-    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     *zoom: 1;
@@ -977,12 +979,13 @@ small.subtitle {
 
     .topnavcms > li:hover > a {
         color: #fff;
-        background-color: #123953;
+        background-color: transparent;
+        font-size: 17px;
     }
 
     .topnavcms > li.on > a {
         color: #fff;
-        background-color: #123953;
+        background-color: transparent;
     }
 
     .topnavcms .top-nav-1 {

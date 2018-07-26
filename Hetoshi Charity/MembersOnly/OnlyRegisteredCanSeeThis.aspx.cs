@@ -10,6 +10,7 @@ public partial class OnlyRegisteredCanSeeThis : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Welcome.Text = "Welcome " + Session["userName"].ToString();
         //if (!Page.IsPostBack)
         //{
         //    Master.LogOutBtn = false;
